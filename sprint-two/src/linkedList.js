@@ -53,4 +53,7 @@ var Node = function(value) {
 
 /*
  * Complexity: What is the time complexity of the above functions?
+ addToTail: constant time
+ removeHead: constant time
+ contains: n or linear time, n/2 on average.
  */
