@@ -4,20 +4,12 @@ var BinarySearchTree = function(value) {
   newTree.right = null;
   newTree.value = value;
 
-<<<<<<< HEAD
   extend(newTree, bstMethods);
-=======
-  extend(newTree, treeMethods);
->>>>>>> 69cd2b955f476341c11ac9acc743cf71c96090c2
   
   return newTree;
 };
 
-<<<<<<< HEAD
 bstMethods = {};
-=======
-treeMethods = {};
->>>>>>> 69cd2b955f476341c11ac9acc743cf71c96090c2
 
 var extend = function(to, from) {
   for (var key in from) {
@@ -25,11 +17,7 @@ var extend = function(to, from) {
   }
 };
 
-<<<<<<< HEAD
 bstMethods.insert = function(value) {
-=======
-treeMethods.insert = function(value) {
->>>>>>> 69cd2b955f476341c11ac9acc743cf71c96090c2
   if (value <= this.value) {
     if (this.left === null) {
       this.left = BinarySearchTree(value);
@@ -45,7 +33,6 @@ treeMethods.insert = function(value) {
   }
 };
 
-<<<<<<< HEAD
 bstMethods.contains = function(value) {
   if (value === this.value) {
     return true;
@@ -68,18 +55,6 @@ bstMethods.depthFirstLog = function(cb) {
   if (this.right !== null) {
     this.right.depthFirstLog(cb);
   }
-=======
-treeMethods.contains = function(value) {
-
-  
-
-};
-
-treeMethods.depthFirstLog = function(value) {
-
-  
-
->>>>>>> 69cd2b955f476341c11ac9acc743cf71c96090c2
 };
 
 
