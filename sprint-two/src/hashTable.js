@@ -66,14 +66,7 @@ HashTable.prototype.remove = function(k) {
         newStorage.get(newindex)[key] = item[key];
       }
     });
-
-
-    /*for (var index = 0; index < this._storage.length; index++) {
-      for (var key in this._storage.get(index)) {
-        var newindex = getIndexBelowMaxForKey(key, this._limit);
-        newStorage.get(newindex)[key] = this._storage.get(index)[key];
-      }
-    }*/
+    
     this._storage = newStorage;
   }
 
